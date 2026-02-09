@@ -1,0 +1,20 @@
+[package]
+name = "napi-modules"
+version = "0.1.0"
+edition = "2024"
+license = "MIT OR Apache-2.0"
+description = "⤵️ import() and require() for NAPI-RS"
+homepage = "https://docs.rs/napi-modules"
+repository = "https://github.com/jcbhmr/napi-modules"
+
+[workspace]
+members = ["examples/*"]
+
+[dependencies]
+camino = "1.2.2"
+derive_more = { version = "2.1.1", features = ["into", "from"] }
+fs-err = "3.3.0"
+memoize = "0.6.0"
+napi = { version = "3.8.2", features = ["napi9"] }
+thiserror = "2.0.18"
+url = "2.5.8"

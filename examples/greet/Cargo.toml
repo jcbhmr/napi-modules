@@ -1,0 +1,15 @@
+[package]
+name = "examples-greet"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+napi = { version = "3.8.2", features = ["napi9"] }
+napi-derive = "3.5.1"
+napi-modules = { path = "../../" }
+
+[build-dependencies]
+napi-build = "2.3.1"

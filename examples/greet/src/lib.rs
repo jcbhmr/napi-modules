@@ -1,16 +1,3 @@
-# NAPI-RS `import()` and `require()`
-
-⤵️ import() and require() for NAPI-RS
-
-## Installation
-
-```sh
-cargo add napi-modules
-```
-
-## Usage
-
-```rs
 use napi::bindgen_prelude::*;
 use napi_derive::napi;
 use napi_modules::EnvExt;
@@ -28,6 +15,3 @@ pub fn module_exports(mut _exports: Object, env: Env) -> napi::Result<()> {
     }
     Ok(())
 }
-```
-
-## Development
